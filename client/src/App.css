@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+:root{
+--primary-color:#17c0eb;
+--link-hover-color:#ff9f1a;
+--box-color:#4b4b4b;
+--button-bg:#ff9f1a;
+--cart-color:#3ae374;
+--wish-color:#ff3838;
+--menu-color:#3d3d3d;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+--h1-size:35px;
+--h2--size:30px;
+--h3--size:25px;
+--h4-size:20px;
+--text-color:gray;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+--bold:600;
+--semi-bold:700;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+ul{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+}
+button{
+  padding: 10px;
+  font-size:14px;
+  border:none;
+  border-radius:5px;
+  background-color: var(--button-bg);
+  color:white;
+  font-weight: var(--bold);
+  letter-spacing:1px;
+  cursor:pointer;
 }
