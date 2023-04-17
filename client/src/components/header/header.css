@@ -1,0 +1,212 @@
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    box-shadow: var(--box-shadow);
+
+}
+.nav__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 150px;
+   
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    left:0;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.logo h3{
+    font-size: var(--h3-size);
+    font-weight: var(--semi-bold);
+    color: var(--secondary-color);
+    margin-top: 5px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    margin-bottom: 0;
+}
+#link{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+#link:hover{
+    color: var(--secondary-color);
+}
+.nav__icons{
+    display: flex;
+    align-items: center;
+    column-gap: 35px;
+}
+.nav__icons span .icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+.cart__icon,
+.fav__icon{
+    position: relative;
+}
+.fav__icon{
+    color: red;
+}
+.cart__icon{
+    color: #78e08f;
+}
+.cart__icon .badge,
+.fav__icon .badge{
+    position: absolute;
+    top: 30%;
+    left:70%;
+    width: 15px;
+    height: 15px;
+    content: '';
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 400;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__icons .profile{
+    position: relative;
+    z-index: 9;
+}
+.nav__icons .profile img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+.nav__icons .profile .profile__actions{
+    position: absolute;
+    left:0;
+    width: 150px;
+    top:97%;
+    z-index:10;
+    padding: 15px;
+    display:flex;
+    text-align: center;
+    flex-direction:column;
+    background:var(--primary-color);
+    line-height: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    border-radius: 5px;
+}
+.nav__icons .profile .profile__actions:hover{
+    color: var(--secondary-color);
+}
+.show__profileActions{
+    display: block !important;
+}
+.profile__actions a{
+    color: white;
+    text-decoration: none;
+}
+.profile__actions a:hover{
+    color: var(--secondary-color);
+}
+.mobile__menu{
+    font-size: 20px;
+    color: var(--primary-color);
+    display: none;
+}
+.nav__active{
+    font-weight: var(--semi-bold) !important;
+    color: var(--secondary-color) !important;
+}
+.sticky__header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 999;
+    background-color:white;
+}
+/* tablet */
+@media only screen and (max-width:768px){
+    .navigation{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.53);
+        z-index: 9999;
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        top:70px;
+        right: 0;
+        width: 250px;
+        height: 50%;
+        background-color: white;
+        z-index: 99999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .active__menu {
+        display: block;
+    }
+    .mobile__menu{
+        display: block;
+    }
+    .mobile__menu span i {
+        font-size: 1.3rem !important;
+    }
+    .logo img{
+        width: 1rem;
+        height: 1rem;
+    }
+    .logo h1{
+        font-size: 1rem;
+    }
+    .fav__icon i,
+    .cart__icon i {
+        font-size: 1.2rem !important;
+    }
+    .nav__icons .profile img {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+}
+/* mobil */
+@media only screen and (max-width:576px){
+    .menu{
+        position: absolute;
+        top:70px;
+        right: 0;
+        width: 200px;
+        height: 50%;
+        background-color: white;
+        z-index: 99999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

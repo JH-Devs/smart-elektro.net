@@ -1,0 +1,37 @@
+.hero__section{
+    background-color: var(--primary-color);
+    padding:50px;
+}
+.hero__content{
+    padding-top: 45px;
+}
+.hero__content h2{
+    color: var(--secondary-color);
+    font-size: var(--h1-size);
+    font-weight: var(--bold);
+    margin:20px 0px;
+}
+.hero__content p{
+    color: lightgrey;
+    line-height: 28px;
+    width: 550px;
+}
+.hero__content p:nth-child(1){
+    font-weight: var(--bold);
+}
+.hero__content .buy__btn{
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.hero__img{
+    border-radius: 5px;
+    object-fit: cover;
+    height: 400px;
+}
+.tesst{
+    position: absolute;
+    left: 50px;
+    height: 400px;
+
+}
