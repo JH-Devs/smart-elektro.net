@@ -4,6 +4,7 @@ import Helmet from '../components/helmet/Helmet'
 import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
 import '../styles/home.css'
+import gifImg from '../assets/img/hero_gif.gif'
 
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
               </div>
             </Col>
             <Col lg='6' md='6' className='hero__col'>
-              <img className='hero__img' src='https://media.giphy.com/media/pOEbLRT4SwD35IELiQ/giphy.gif' alt="" />
+              <img className='hero__img' src={gifImg}  alt="" />
             </Col>
           </Row>
         </Container>
