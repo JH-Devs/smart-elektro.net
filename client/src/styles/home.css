@@ -1,6 +1,8 @@
 .hero__section{
     background-color: var(--primary-color);
     padding:50px;
+    display: flex;
+    height: 55vh;
 }
 .hero__content{
     padding-top: 45px;
@@ -29,9 +31,10 @@
     object-fit: cover;
     height: 400px;
 }
-.tesst{
-    position: absolute;
-    left: 50px;
-    height: 400px;
-
+.sales__products{
+    display: grid;
+    
+    
 }
+
+

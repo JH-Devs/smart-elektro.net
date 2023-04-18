@@ -1,13 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import {Container, Row, Col} from 'reactstrap'
 import Helmet from '../components/helmet/Helmet'
 import {motion} from 'framer-motion'
 import {Link} from 'react-router-dom'
 import '../styles/home.css'
 import gifImg from '../assets/img/hero_gif.gif'
+import { useState } from 'react'
+import ProductList from '../components/ui/ProductList'
+import products from '../assets/data/products'
 
 
 const Home = () => {
+  const [saleProducts, setSaleProducts] = useState([]);
+
+  useEffect(() => {
+    const filteredSaleProducts = products.filter(item => item.category === 'Výprodej')
+
+    setSaleProducts(filteredSaleProducts);
+    
+  }, []);
 
   return (
     <Helmet title={''}>
@@ -26,6 +37,16 @@ const Home = () => {
             <Col lg='6' md='6' className='hero__col'>
               <img className='hero__img' src={gifImg}  alt="" />
             </Col>
+          </Row>
+        </Container>
+      </section>
+      <section className="sales__products">
+        <Container>
+          <Row>
+            <Col lg='12' className='text-center'>
+              <h2 className="section__title">Výprodej</h2>
+            </Col>
+            <ProductList data={saleProducts} />
           </Row>
         </Container>
       </section>
