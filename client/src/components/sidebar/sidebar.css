@@ -1,0 +1,11 @@
+.sidebar{
+    box-shadow: var(--box-shadow);
+    height: 100vh;
+    position:absolute;
+    left:0;
+    width:250px;
+    margin:0px 20px ;
+}
+.center{
+  
+}

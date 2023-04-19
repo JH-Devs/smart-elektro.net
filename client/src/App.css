@@ -62,3 +62,9 @@ section{
   text-decoration: underline;
   text-decoration-color: var(--secondary-color);
 }
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

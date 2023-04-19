@@ -22,6 +22,12 @@ import productImage04_02 from'../img/products/v-04-02.png'
 import productImage04_03 from'../img/products/v-04-03.png'
 import productImage04_04 from'../img/products/v-04-04.png'
 
+import productImg05 from '../img/products/v-05.png'
+import productImage05_01 from'../img/products/v-05-01.png'
+import productImage05_02 from'../img/products/v-05-02.png'
+import productImage05_03 from'../img/products/v-05-03.png'
+import productImage05_04 from'../img/products/v-05-04.png'
+
 
 const products = [
     {
@@ -30,6 +36,7 @@ const products = [
         productName:'Video zvonek Philips',
         imgUrl: productImg01,
         category:'Výprodej',
+        hcategory:'Výprodej',
         brand:'Philips',
         oldPrice:9650,
         price:8675,
@@ -56,6 +63,7 @@ const products = [
         productName:'Projektor hvězdné oblohy',
         imgUrl: productImg02,
         category:'Výprodej',
+        hcategory:'Výprodej',
         brand:'Palamar',
         oldPrice:1755,
         price:1250,
@@ -82,6 +90,7 @@ const products = [
         productName:'Horkovzdušná fritéza',
         imgUrl: productImg03,
         category:'Výprodej',
+        hcategory:'Výprodej',
         brand:'Cosori',
         oldPrice:3550,
         price:3300,
@@ -108,6 +117,7 @@ const products = [
         productName:'Chytré hodinky ',
         imgUrl: productImg04,
         category:'Výprodej',
+        hcategory:'Výprodej',
         brand:'Cosori',
         oldPrice:1725,
         price:1675,
@@ -129,28 +139,28 @@ const products = [
         ]
     },
     {
-        id:'01',
-        code: 'v-01',
-        productName:'Video zvonek Philips',
+        id:'05',
+        code: 'v-05',
+        productName:'Vysokotlaký čistič',
         imgUrl: productImg01,
         category:'Výprodej',
-        brand:'Philips',
-        oldPrice:9650,
-        price:8675,
-        shortDeesc:'7 palcový monitor (18 cm úhlopříčka). Včetně bezplatného připojení smartphonu a ovládání pomocí aplikace (bez poplatků za předplatné)',
-        description:'S vaším chytrým video dveřním interkomem Welcome Eye Connect 2 můžete své vchodové dveře sledovat kdykoli a kdekoli a můžete reagovat. Zvoní u vašich domovních dveří? Na svém smartphonu můžete nejen vidět, kdo zvoní, ale také komunikovat přímo s danou osobou, ať už na cestách nebo vlastně doma. Díky funkci upozornění můžete zanechat hlasovou zprávu pro vaše návštěvníky nebo kurýra.Kromě bezplatného připojení smartphonu přes aplikaci se ovládání a sledování provádí také prostřednictvím 7palcového monitoru nebo pomocí jazykových asistentů Amazon Alexa a Google Home.Aplikace pro chytré telefony bez poplatků za předplatné!',
+        brand:'Kärcher',
+        oldPrice:13975,
+        price:9625,
+        shortDeesc:'Inovativní propojení s aplikací přes Bluetooth – řešení pro nejrůznější druhy čisticích prací – vč. hadicového bubnu a sady Home Kit',
+        description:'Objevte s aplikací Home & Garden (český jazyk nelze zaručit) cenné tipy odborníků Kärcher jako například správný tlak pro vaši situaci – individualizovaný přesně pro váš přístroj.Čištění nikdy nebylo tak chytré. Přes Bluetooth lze v okamžiku přenést správný tlak pro daný typ práce z aplikace na váš přístroj – pro optimální výsledek čištění.Extra výkon v režimu Boost – díky režimu Boost se v pár okamžicích zbavíte i odolných, usazených nečistot. Aktivuje se pomocí pistole nebo aplikace, navýší tlak o 15 bar.Výkonné řešení – univerzální čistič pro čištění vozidel, zahradního nářadí, balkonového a zahradního nábytku, plotů a cest, schodů a kamenných zídek, s tím vším si čistič K 5 poradí snadno a bez námahy.Rozsah dodávky: vysokotlaký čistič s pistolí 180 Q Smart Control, tryska 3 v 1 Multi Jet, sada Home Kit (čistič ploch T 5, čistič kamene a fasád 3 v 1 1 l), 10m vysokotlaká hadice',
         nextImg:[
             {
-                imgUrl1: productImage01_01,
+                imgUrl1: productImage05_01,
             },
             {
-                imgUrl2: productImage01_02,
+                imgUrl2: productImage05_02,
             },
             {
-                imgUrl3: productImage01_03,
+                imgUrl3: productImage05_03,
             },
             {
-                imgUrl4: productImage01_04,
+                imgUrl4: productImage05_04,
             },
         ]
     },

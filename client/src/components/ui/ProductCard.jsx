@@ -41,6 +41,7 @@ const ProductCard = ({item}) => {
         </div>
         <div className="product__card-bottom d-flex align-items-center justify-content-between p-3">
         <span className="price">{item.price} Kč</span>
+        <span className='old__price'>{item.oldPrice} Kč</span>
         <motion.span whileTap={{scale:1.2}} onClick={addToCart} ><ShoppingCartIcon className='icon'/></motion.span>
         </div>
       </div>

@@ -3,6 +3,7 @@
     cursor: pointer;
     height: 450px;
     box-shadow: var(--box-shadow);
+    margin-bottom: 20px;
 }
 .product__item .product__img{
     height:250px;
@@ -31,6 +32,10 @@
     color: var(--primary-color);
     font-size: 20px;
     font-weight: 500;
+}
+.product__card-bottom .old__price{
+    color: gray;
+    text-decoration: line-through;
 }
 .product__card-bottom span .icon{
     font-size: 25px;

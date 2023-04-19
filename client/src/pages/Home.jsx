@@ -14,7 +14,7 @@ const Home = () => {
   const [saleProducts, setSaleProducts] = useState([]);
 
   useEffect(() => {
-    const filteredSaleProducts = products.filter(item => item.category === 'Výprodej')
+    const filteredSaleProducts = products.filter(item => item.hcategory === 'Výprodej')
 
     setSaleProducts(filteredSaleProducts);
     
@@ -40,8 +40,8 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-      <section className="sales__products">
-        <Container>
+      <section  className="sales__products">
+        <Container  className='sales'>
           <Row>
             <Col lg='12' className='text-center'>
               <h2 className="section__title">Výprodej</h2>
