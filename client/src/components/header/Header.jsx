@@ -107,6 +107,7 @@ const Header = () => {
                             }
                         </ul>
                     </div>
+            
                     <div className="nav__icons" >
                         <span className="fav__icon" onClick={navigateToWish}>
                             <FavoriteIcon className='icon'/>

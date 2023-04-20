@@ -1,27 +1,30 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Helmet from '../components/helmet/Helmet'
-import {Container, Row, Col} from 'reactstrap'
 import Sidebar from '../components/sidebar/Sidebar'
 import ProductList from '../components/ui/ProductList'
 import products from '../assets/data/products'
 import '../styles/shop.css'
 import Paginate from '../components/ui/Paginate'
+
 const Shop = () => {
   return (
     <Helmet title={'Shop'}>
       <section className='shop'>
-      <Container>
-        <Row>
-          <Col lg='0'>
+      <div className="shop__row">
+        <div className="col1">
           <Sidebar />
-          </Col>
-          <ProductList data={products}  className='product__shop'/>
-          <Paginate />
-        </Row>
-      </Container>
-      </section>
+        </div>
+        <div className="col2">
+          <ProductList  data={products} className='product__shop' />
+      </div>
+    </div>
+  </section>
+    <div className="paginate">
+      <Paginate className='paginate' />
+    </div>
     </Helmet>
   )
 }
 
 export default Shop
+

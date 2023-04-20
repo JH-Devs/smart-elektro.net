@@ -28,6 +28,8 @@ import productImage05_02 from'../img/products/v-05-02.png'
 import productImage05_03 from'../img/products/v-05-03.png'
 import productImage05_04 from'../img/products/v-05-04.png'
 
+import productImg06 from '../img/products/d-01.png'
+
 
 const products = [
     {
@@ -143,7 +145,8 @@ const products = [
         code: 'v-05',
         productName:'Vysokotlaký čistič',
         imgUrl: productImg01,
-        category:'Výprodej',
+        category:'Zvonky',
+        hcategory:'Novinky',
         brand:'Kärcher',
         oldPrice:13975,
         price:9625,
@@ -169,7 +172,8 @@ const products = [
         code: 'v-02',
         productName:'Projektor hvězdné oblohy',
         imgUrl: productImg02,
-        category:'Výprodej',
+        category:'Osvělení',
+        hcategory:'Novinky',
         brand:'Palamar',
         oldPrice:1755,
         price:1250,
@@ -195,7 +199,8 @@ const products = [
         code: 'v-03',
         productName:'Horkovzdušná fritéza',
         imgUrl: productImg03,
-        category:'Výprodej',
+        category:'Spotřebice',
+        hcategory:'Novinky',
         brand:'Cosori',
         oldPrice:3550,
         price:3300,
@@ -221,7 +226,8 @@ const products = [
         code: 'v-04',
         productName:'Chytré hodinky ',
         imgUrl: productImg04,
-        category:'Výprodej',
+        category:'Hodinky',
+        hcategory:'Novinky',
         brand:'Cosori',
         oldPrice:1725,
         price:1675,
@@ -242,8 +248,11 @@ const products = [
             },
         ]
     },
-    
+   
 ];
 export default products;
+
+
+
 
 

@@ -12,12 +12,15 @@ import products from '../assets/data/products'
 
 const Home = () => {
   const [saleProducts, setSaleProducts] = useState([]);
+  const [newProducts, setNewProducts] = useState([]);
 
   useEffect(() => {
     const filteredSaleProducts = products.filter(item => item.hcategory === 'Výprodej')
 
     setSaleProducts(filteredSaleProducts);
-    
+
+    const filteredNewProducts = products.filter(item => item.hcategory === 'Novinky')
+    setNewProducts(filteredNewProducts);
   }, []);
 
   return (
@@ -47,6 +50,16 @@ const Home = () => {
               <h2 className="section__title">Výprodej</h2>
             </Col>
             <ProductList data={saleProducts} />
+          </Row>
+        </Container>
+      </section>
+      <section  className="new__products">
+        <Container  className='new'>
+          <Row>
+            <Col lg='12' className='text-center'>
+              <h2 className="section__title">Novinky</h2>
+            </Col>
+            <ProductList data={newProducts} />
           </Row>
         </Container>
       </section>

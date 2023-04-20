@@ -1,12 +1,16 @@
+
 .product__item{
     padding: 20px;
     cursor: pointer;
     height: 450px;
     box-shadow: var(--box-shadow);
     margin-bottom: 20px;
+    width: 300px;
+    display: grid;
 }
 .product__item .product__img{
     height:250px;
+    width: 100%;
 }
 .product__item .product__img img{
     height: 250px;

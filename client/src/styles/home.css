@@ -31,4 +31,7 @@
     object-fit: cover;
     height: 400px;
 }
-
+.new__products{
+    width: 100%;
+    display: flex;
+}
