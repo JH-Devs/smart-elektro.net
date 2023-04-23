@@ -35,3 +35,22 @@
     width: 100%;
     display: flex;
 }
+@media only screen and (max-width:1440px){
+    .hero__content{
+        padding-top: 10px;
+    }
+    .hero__content h2{
+        font-size:var(--h2-size);
+    }
+    .hero__content p{
+        line-height:20px;
+    }
+    .hero__content .buy__btn{
+        font-size:12px;
+    }
+    .hero__img{
+        width:90%;
+        height:300px;
+    }
+
+}

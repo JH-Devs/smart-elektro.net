@@ -61,10 +61,16 @@ section{
   margin-bottom: 30px;
   text-decoration: underline;
   text-decoration-color: var(--secondary-color);
+  font-size:var(--h1-size);
 }
 .pagination{
   display: flex;
   align-items: center;
   justify-content: center;
 
+}
+@media only screen and (max-width:1440px){
+  .section__title{
+    font-size: var(--h3-size);
+  }
 }

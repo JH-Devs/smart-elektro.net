@@ -145,6 +145,38 @@
     z-index: 999;
     background-color:white;
 }
+
+@media only screen and (max-width:1440px){
+    .nav__wrapper{
+        width: 50%;
+        margin: 0 50px;
+    }
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+    .logo h3{
+        font-size:16px;
+    }
+    .menu{
+        column-gap:30px;
+        padding-left:300px;
+    }
+    .nav__icons span .icon {
+        font-size:20px;
+    }
+    .cart__icon .badge,
+    .fav__icon .badge{
+        width: 12px;
+        height: 13px;
+        font-size:12px;
+    }
+    .nav__icons .profile img{
+        width:25px;
+        height:25px;
+        margin-top:-5px;
+    }
+}
 /* tablet */
 @media only screen and (max-width:768px){
     .navigation{
